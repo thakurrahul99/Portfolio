@@ -444,7 +444,7 @@ a:hover{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url(/assets/images/portrait.webp);
+        background-image: url(/assets/images/portrait-2.png);
     }
 
     .hero-content{
@@ -1021,25 +1021,55 @@ a:hover{
 }
 
 /*--------------------------------------------------------------
-# Scroll reveal animations (AOS-like without library)
+# CSS-only Scroll-driven animations (no JS)
+# Uses CSS Scroll-Driven Animations (animation-timeline: view())
+# Supported in modern Chromium/Edge and Safari 17+ (Firefox behind a flag)
 --------------------------------------------------------------*/
+:root{
+    --reveal-duration: .7s;
+}
+
+/* Base behavior: any element with data-aos will animate into view */
 [data-aos] {
     opacity: 0;
-    transition-property: opacity, transform;
-    transition-duration: .6s;
-    transition-timing-function: ease;
-    will-change: opacity, transform;
+    transform: var(--from-transform, translateY(24px));
+    animation-name: reveal-in;
+    animation-duration: var(--reveal-duration);
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    /* Scroll-driven: start when the element enters the viewport, end after some coverage */
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
 }
 
-[data-aos="fade-up"] {
-    transform: translateY(24px);
+@keyframes reveal-in {
+    to {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
 }
 
-[data-aos="fade-down"] {
-    transform: translateY(-24px);
-}
+/* Variants mapped from data-aos values */
+[data-aos="fade-up"]   { --from-transform: translateY(24px); }
+[data-aos="fade-down"] { --from-transform: translateY(-24px); }
+[data-aos="fade-left"] { --from-transform: translateX(-24px); }
+[data-aos="fade-right"]{ --from-transform: translateX(24px); }
+[data-aos="zoom-in"]   { --from-transform: scale(0.95); }
+[data-aos="zoom-out"]  { --from-transform: scale(1.05); }
+[data-aos="blur-in"]   { filter: blur(8px); }
 
-[data-aos].aos-animate {
-    opacity: 1;
-    transform: none;
-}
+/* Common delays used in the markup */
+[data-aos-delay="0"]   { animation-delay: 0s; }
+[data-aos-delay="200"] { animation-delay: .2s; }
+[data-aos-delay="400"] { animation-delay: .4s; }
+[data-aos-delay="500"] { animation-delay: .5s; }
+[data-aos-delay="600"] { animation-delay: .6s; }
+[data-aos-delay="620"] { animation-delay: .62s; }
+[data-aos-delay="640"] { animation-delay: .64s; }
+[data-aos-delay="660"] { animation-delay: .66s; }
+[data-aos-delay="680"] { animation-delay: .68s; }
+[data-aos-delay="690"] { animation-delay: .69s; }
+[data-aos-delay="700"] { animation-delay: .7s; }
+[data-aos-delay="800"] { animation-delay: .8s; }
+[data-aos-delay="1000"]{ animation-delay: 1s; }
