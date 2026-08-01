@@ -34,18 +34,23 @@ function Navbar() {
 
   return (
     <>
-      <div 
+      <div
         className="fixed left-0 w-full z-50 px-4 transition-all duration-300 ease-in-out"
         style={{
-          top: visible ? '16px' : '-100px'
+          top: visible ? "16px" : "-100px",
         }}
       >
         <nav className="max-w-3xl mx-auto px-6 py-3 rounded-full border border-white/5 bg-slate-950/40 backdrop-blur-lg flex items-center justify-between shadow-xl shadow-black/30">
           {/* Logo */}
-          <a href="#hero" className="flex items-center space-x-1 font-bold text-base select-none hover:scale-105 transition-transform duration-250">
-            <span className="text-violet-500 font-mono">&lt;</span>
-            <span className="text-white tracking-wide logo-name">Rahul Singh</span>
-            <span className="text-violet-500 font-mono">/&gt;</span>
+          <a
+            href="#hero"
+            className="flex items-center space-x-1 font-bold text-base select-none hover:scale-105 transition-transform duration-250"
+          >
+            <span className="text-white tracking-wide">&lt;</span>
+            <span className="text-white tracking-wide logo-name">
+              Rahul Singh
+            </span>
+            <span className="text-white tracking-wide">/&gt;</span>
           </a>
 
           {/* Desktop Links with Colorful Hover Underlines */}
@@ -73,7 +78,10 @@ function Navbar() {
 
         {/* Mobile Dropdown Drawer */}
         {mobileOpen && (
-          <div className="md:hidden max-w-sm mx-auto mt-2 rounded-3xl border border-white/5 bg-slate-950/90 backdrop-blur-lg p-4 shadow-2xl shadow-black/50 animate-fadeIn" style={{ animationDuration: '0.2s' }}>
+          <div
+            className="md:hidden max-w-sm mx-auto mt-2 rounded-3xl border border-white/5 bg-slate-950/90 backdrop-blur-lg p-4 shadow-2xl shadow-black/50 animate-fadeIn"
+            style={{ animationDuration: "0.2s" }}
+          >
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <a
@@ -100,7 +108,7 @@ function Navbar() {
         }
       `}</style>
     </>
-  )
+  );
 }
 
 export default Navbar

@@ -64,12 +64,12 @@ function About() {
           <div className="relative group max-w-sm rounded-3xl overflow-hidden p-[1.5px] bg-gradient-to-br from-violet-500 to-indigo-500 shadow-2xl">
             {/* Soft Ambient Glow behind Portrait */}
             <div className="absolute inset-0 bg-gradient-to-tr from-violet-600 to-indigo-600 opacity-20 blur-2xl group-hover:opacity-30 transition-opacity"></div>
-            
+
             <div className="rounded-[22px] overflow-hidden bg-slate-950">
-              <img 
-                src="/assets/images/portrait-2.webp" 
-                alt="About Rahul Singh" 
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" 
+              <img
+                src="/assets/images/portrait-2.webp"
+                alt="About Rahul Singh"
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
@@ -84,21 +84,42 @@ function About() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
               About Me
             </h2>
-            <p className="text-slate-500 text-xs sm:text-sm tracking-wide">My story in a nutshell ;)</p>
+            <p className="text-slate-500 text-xs sm:text-sm tracking-wide">
+              My story in a nutshell ;)
+            </p>
           </div>
 
           <div className="space-y-4 text-slate-355 text-xs sm:text-sm leading-relaxed">
             <p>
-              Hey there, I'm <span className="text-white font-bold">Rahul</span>, a 22-year-old developer from India. I am highly passionate about full-stack web development using the <span className="text-violet-400 font-semibold">MERN Stack (MongoDB, Express, React, and Node.js)</span>. My journey into programming started with my excitement for creating interactive user interfaces and bringing code to life.
+              Hey there, I'm{" "}
+              <span className="text-white font-bold">Rahul Singh</span>, a MERN
+              Stack Developer passionate about building fast, scalable, and
+              user-centric web applications. I enjoy transforming ideas into
+              modern digital experiences using React, Next.js, Node.js,
+              Express.js, and MongoDB.{" "}
             </p>
             <p>
-              I completed my Bachelor's degree in Science (B.Sc. in Physics, Chemistry, Mathematics) from <span className="text-white font-semibold">Sri Siddhi Vinayak Mahavidhyalaya</span> (affiliated with <span className="text-slate-400 italic">Dr. Bhimrao Ambedkar University, Agra</span>) in 2024. Currently, I am pursuing a Master of Computer Applications (MCA) at <span className="text-white font-semibold">BSA College of Engineering & Technology, Mathura</span> (affiliated with <span className="text-slate-400 italic">Dr. A.P.J. Abdul Kalam Technical University, Lucknow</span>) to further deepen my computer science knowledge and software engineering capabilities.
+              {" "}
+              I hold a <b>Bachelor's degree in Science</b> and am currently
+              pursuing a <b>Master of Computer Applications (MCA)</b>. Alongside
+              my academic journey, I continuously enhance my skills by building
+              real-world projects, exploring modern web technologies, and
+              writing clean, maintainable code.
             </p>
             <p>
-              My focus is on creating web applications that are not only visually stunning with smooth animations and transitions, but also highly performant and responsive on every device. I love designing sleek interfaces and writing clean, scalable code that delivers an exceptional user experience.
+              {" "}
+              My focus is on creating responsive, high-performance applications
+              with intuitive user experiences, scalable architecture, and
+              pixel-perfect interfaces. I'm always eager to learn, solve
+              challenging problems, and contribute to impactful software
+              projects.
             </p>
             <p>
-              Check out my projects below to see some of my work!
+              <b>
+                {" "}
+                "I don't just build websites—I create fast, scalable, and
+                meaningful digital experiences that make an impact."
+              </b>
             </p>
           </div>
         </div>
@@ -115,7 +136,7 @@ function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {interests.map((interest, idx) => (
-            <div 
+            <div
               key={idx}
               className="glow-card glass-panel rounded-3xl p-8 flex flex-col items-center text-center space-y-4 transition-all duration-300"
             >
@@ -123,7 +144,9 @@ function About() {
                 {interest.icon}
               </div>
               <h3 className="text-lg font-bold text-white">{interest.title}</h3>
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">{interest.text}</p>
+              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                {interest.text}
+              </p>
             </div>
           ))}
         </div>
@@ -145,48 +168,54 @@ function About() {
 
           <div className="space-y-12">
             {qualifications.map((qual, idx) => {
-              const isEven = idx % 2 === 0
+              const isEven = idx % 2 === 0;
               return (
-                <div key={idx} className="relative flex flex-col md:flex-row items-start md:items-center">
-                  
+                <div
+                  key={idx}
+                  className="relative flex flex-col md:flex-row items-start md:items-center"
+                >
                   {/* Timeline Glowing Node Bullet */}
                   <div className="absolute left-4 md:left-1/2 -translate-x-[7.5px] md:-translate-x-[7.5px] w-[15px] h-[15px] rounded-full bg-violet-500 border-4 border-[#030712] shadow-[0_0_10px_#8b5cf6] z-20"></div>
-                  
+
                   {/* Timeline Card */}
-                  <div className={`w-full md:w-[45%] pl-10 md:pl-0 ${isEven ? 'md:mr-auto text-left md:text-right' : 'md:ml-auto text-left'}`}>
+                  <div
+                    className={`w-full md:w-[45%] pl-10 md:pl-0 ${isEven ? "md:mr-auto text-left md:text-right" : "md:ml-auto text-left"}`}
+                  >
                     <div className="glow-card glass-panel p-6 rounded-3xl transition-all duration-300 hover:scale-103 inline-block w-full text-left">
                       <span className="text-xs font-bold text-violet-400 font-mono mb-1.5 block">
                         {qual.year}
                       </span>
                       <h3 className="text-sm sm:text-base font-extrabold text-white mb-2 flex items-center gap-2">
-                        <GraduationCap size={16} className="text-violet-400 shrink-0" />
+                        <GraduationCap
+                          size={16}
+                          className="text-violet-400 shrink-0"
+                        />
                         {qual.title}
                       </h3>
-                      
+
                       <p className="text-slate-300 text-xs font-bold mb-0.5">
                         {qual.institution}
                       </p>
-                      
+
                       {qual.university && (
                         <p className="text-[10px] text-slate-500 font-medium italic mb-2">
                           Affiliated with: {qual.university}
                         </p>
                       )}
-                      
+
                       <p className="text-slate-400 text-xs leading-relaxed border-t border-white/5 pt-2 mt-2">
                         {qual.desc}
                       </p>
                     </div>
                   </div>
-
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default About

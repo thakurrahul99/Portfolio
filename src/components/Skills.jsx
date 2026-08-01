@@ -2,86 +2,147 @@ import React from 'react'
 
 function Skills() {
   const skills = [
-    { 
-      name: 'HTML', 
-      image: '/assets/images/skills/HTML.svg', 
-      glowClass: 'hover:border-orange-500/40 hover:shadow-[0_0_15px_rgba(240,101,41,0.2)]'
+    {
+      name: "HTML",
+      image: "/assets/images/skills/HTML.svg",
+      glowClass:
+        "hover:border-orange-500/40 hover:shadow-[0_0_15px_rgba(240,101,41,0.2)]",
     },
-    { 
-      name: 'CSS', 
-      image: '/assets/images/skills/CSS.svg', 
-      glowClass: 'hover:border-blue-500/40 hover:shadow-[0_0_15px_rgba(41,101,241,0.2)]'
+    {
+      name: "CSS",
+      image: "/assets/images/skills/CSS.svg",
+      glowClass:
+        "hover:border-blue-500/40 hover:shadow-[0_0_15px_rgba(41,101,241,0.2)]",
     },
-    { 
-      name: 'JavaScript', 
-      image: '/assets/images/skills/JS.svg', 
-      glowClass: 'hover:border-yellow-500/40 hover:shadow-[0_0_15px_rgba(247,223,30,0.2)]'
+    {
+      name: "JavaScript",
+      image: "/assets/images/skills/JS.svg",
+      glowClass:
+        "hover:border-yellow-500/40 hover:shadow-[0_0_15px_rgba(247,223,30,0.2)]",
     },
-    { 
-      name: 'NodeJS', 
-      image: '/assets/images/skills/NodeJS.svg', 
-      glowClass: 'hover:border-green-500/40 hover:shadow-[0_0_15px_rgba(61,135,53,0.2)]'
+    {
+      name: "ReactJS",
+      image: "/assets/images/skills/react-svgrepo-com.svg",
+      glowClass:
+        "hover:border-cyan-500/40 hover:shadow-[0_0_15px_rgba(56,189,248,0.2)]",
     },
-    { 
-      name: 'ExpressJS', 
-      image: '/assets/images/skills/ExpressJS.svg', 
-      glowClass: 'hover:border-white/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]'
+    {
+      name: "NodeJS",
+      image: "/assets/images/skills/NodeJS.svg",
+      glowClass:
+        "hover:border-green-500/40 hover:shadow-[0_0_15px_rgba(61,135,53,0.2)]",
     },
-    { 
-      name: 'Bootstrap', 
-      image: '/assets/images/skills/Bootstrap.svg', 
-      glowClass: 'hover:border-purple-500/40 hover:shadow-[0_0_15px_rgba(121,44,237,0.2)]'
+    {
+      name: "ExpressJS",
+      image: "/assets/images/skills/ExpressJS.svg",
+      glowClass:
+        "hover:border-white/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]",
     },
-    { 
-      name: 'Python', 
-      image: '/assets/images/skills/Python.svg', 
-      glowClass: 'hover:border-blue-400/40 hover:shadow-[0_0_15px_rgba(55,115,165,0.2)]'
+    {
+      name: "Bootstrap",
+      image: "/assets/images/skills/Bootstrap.svg",
+      glowClass:
+        "hover:border-purple-500/40 hover:shadow-[0_0_15px_rgba(121,44,237,0.2)]",
     },
-    { 
-      name: 'Tailwind CSS', 
-      image: '/assets/images/skills/Tailwind.svg.png', 
-      glowClass: 'hover:border-cyan-500/40 hover:shadow-[0_0_15px_rgba(56,189,248,0.2)]', 
-      isTailwind: true 
+    {
+      name: "Python",
+      image: "/assets/images/skills/Python.svg",
+      glowClass:
+        "hover:border-blue-400/40 hover:shadow-[0_0_15px_rgba(55,115,165,0.2)]",
     },
-    { 
-      name: 'MongoDB', 
-      image: '/assets/images/skills/MongoDB.svg', 
-      glowClass: 'hover:border-emerald-500/40 hover:shadow-[0_0_15px_rgba(71,162,72,0.2)]'
-    }
-  ]
+    {
+      name: "Tailwind CSS",
+      image: "/assets/images/skills/Tailwind.svg.png",
+      glowClass:
+        "hover:border-cyan-500/40 hover:shadow-[0_0_15px_rgba(56,189,248,0.2)]",
+      isTailwind: true,
+    },
+    {
+      name: "MongoDB",
+      image: "/assets/images/skills/MongoDB.svg",
+      glowClass:
+        "hover:border-emerald-500/40 hover:shadow-[0_0_15px_rgba(71,162,72,0.2)]",
+    },
+  ];
 
   const tools = [
-    { 
-      name: 'VSCode', 
-      image: '/assets/images/tools/vscode.svg', 
-      glowClass: 'hover:border-blue-500/40 hover:shadow-[0_0_15px_rgba(0,122,204,0.2)]'
+    {
+      name: "VSCode",
+      image: "/assets/images/tools/vscode.svg",
+      glowClass:
+        "hover:border-blue-500/40 hover:shadow-[0_0_15px_rgba(0,122,204,0.2)]",
     },
-    { 
-      name: 'Github', 
-      image: '/assets/images/tools/github.svg', 
-      glowClass: 'hover:border-slate-400/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]'
+    {
+      name: "Antigravity",
+      image: "/assets/images/tools/antigravity-color.svg",
+      glowClass:
+        "hover:border-blue-500/40 hover:shadow-[0_0_15px_rgba(0,122,204,0.2)]",
     },
-    { 
-      name: 'Warp', 
-      glowClass: 'hover:border-cyan-400/40 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]',
+    {
+      name: "Git",
+      image: "/assets/images/tools/git.svg",
+      glowClass:
+        "hover:border-slate-400/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]",
+    },
+    {
+      name: "Github",
+      image: "/assets/images/tools/github.svg",
+      glowClass:
+        "hover:border-slate-400/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]",
+    },
+    {
+      name: "Vercel",
+      image: "/assets/images/tools/vercel-fill-svgrepo-com.svg",
+      glowClass:
+        "hover:border-slate-400/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]",
+    },
+    {
+      name: "Warp",
+      glowClass:
+        "hover:border-cyan-400/40 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]",
       customSvg: (
-        <svg className="w-10 h-10 text-slate-350 group-hover:text-cyan-400 transition-colors duration-300" fill="none" viewBox="0 0 101 83" xmlns="http://www.w3.org/2000/svg">
-          <path d="M51.0696 0.921936H88.7341C94.8309 0.921936 99.7736 6.02928 99.7736 12.3295V56.6175C99.7736 62.9179 94.8309 68.0252 88.7341 68.0252H34.835L51.0696 0.921936Z" fill="currentColor"></path>
-          <path d="M41.2866 13.6346H10.9455C4.90046 13.6346 0 18.7419 0 25.0421V69.3302C0 75.6305 4.90046 80.7378 10.9455 80.7378H48.2888L49.7863 74.495H26.6878L41.2866 13.6346Z" fill="currentColor"></path>
+        <svg
+          className="w-10 h-10 text-slate-350 group-hover:text-cyan-400 transition-colors duration-300"
+          fill="none"
+          viewBox="0 0 101 83"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M51.0696 0.921936H88.7341C94.8309 0.921936 99.7736 6.02928 99.7736 12.3295V56.6175C99.7736 62.9179 94.8309 68.0252 88.7341 68.0252H34.835L51.0696 0.921936Z"
+            fill="currentColor"
+          ></path>
+          <path
+            d="M41.2866 13.6346H10.9455C4.90046 13.6346 0 18.7419 0 25.0421V69.3302C0 75.6305 4.90046 80.7378 10.9455 80.7378H48.2888L49.7863 74.495H26.6878L41.2866 13.6346Z"
+            fill="currentColor"
+          ></path>
         </svg>
-      )
+      ),
     },
-    { 
-      name: 'ChatGPT', 
-      image: '/assets/images/tools/ChatGPT.svg', 
-      glowClass: 'hover:border-teal-500/40 hover:shadow-[0_0_15px_rgba(16,163,127,0.2)]'
+    {
+      name: "Claude",
+      image: "/assets/images/tools/claude-color.svg",
+      glowClass:
+        "hover:border-teal-500/40 hover:shadow-[0_0_15px_rgba(16,163,127,0.2)]",
     },
-    { 
-      name: 'Gemini', 
-      image: '/assets/images/tools/Gemini.svg', 
-      glowClass: 'hover:border-violet-500/40 hover:shadow-[0_0_15px_rgba(139,92,246,0.2)]'
-    }
-  ]
+    {
+      name: "Figma",
+      image: "/assets/images/tools/Figma.svg",
+      glowClass:
+        "hover:border-violet-500/40 hover:shadow-[0_0_15px_rgba(139,92,246,0.2)]",
+    },
+    {
+      name: "Postman",
+      image: "/assets/images/tools/Postman.svg",
+      glowClass:
+        "hover:border-slate-400/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]",
+    },
+    {
+      name: "Canva",
+      image: "/assets/images/tools/canva.svg",
+      glowClass:
+        "hover:border-slate-400/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]",
+    },
+  ];
 
   return (
     <section id="skills" className="scroll-mt-24 space-y-20">

@@ -29,6 +29,51 @@ function Projects() {
       demo: "https://www.brajpathpradarshak.com/",
     },
     {
+      title: "Wonderlust Travels",
+      stacks: ["HTML", "CSS", "React", "responsive design"],
+      shortDesc:
+        "A modern and responsive travel website showcasing beautiful destinations with an intuitive booking interface and engaging user experience.",
+      fullDesc:
+        "Wanderlust is a modern travel website concept designed to showcase popular destinations with a clean, responsive, and visually engaging interface. The project focuses on delivering an intuitive user experience through smooth navigation, interactive sections, responsive layouts, and elegant UI components. It demonstrates modern frontend development practices with a strong emphasis on performance, accessibility, and user-centric design",
+      features: [
+        "Fully responsive design optimized for mobile, tablet, and desktop.",
+        "Interactive hero section with compelling call-to-action buttons.",
+        "Destination browsing with a modern and intuitive UI.",
+        "Search and trip planning interface for a seamless booking experience.",
+        "Smooth animations, hover effects, and micro-interactions.",
+        "Clean navigation bar with responsive mobile support.",
+        "Modern component-based architecture for scalability.",
+        "Optimized layout focused on performance and user experience.",
+      ],
+      banner: "/assets/images/projects/wonder-banner.png",
+      logo: "/assets/images/projects/wonder-logo.png",
+      status: "In Progress",
+      github: "https://github.com/thakurrahul99/wanderlust-travel-agency.git",
+      demo: "https://wanderlust-travel-agency-roan.vercel.app/",
+    },
+    {
+      title: "Say Simon Game",
+      stacks: ["HTML", "CSS", "React", "React-Hooks"],
+      shortDesc:
+        "A fun and interactive Simon Game built with React, featuring dynamic gameplay, state management, and increasing difficulty levels.",
+      fullDesc:
+        "Simon Game is a classic memory challenge recreated using React. Players must memorize and repeat an increasingly complex sequence of colors. The project demonstrates React fundamentals such as state management, event handling, component-based architecture, conditional rendering, and dynamic UI updates while delivering a smooth and engaging user experience.",
+      features: [
+        "Interactive memory-based gameplay with progressively challenging levels.",
+        "Built using React functional components and Hooks.",
+        "Dynamic sequence generation and real-time user input validation.",
+        "Game over detection with instant restart functionality.",
+        "Responsive UI with smooth animations and visual feedback.",
+        "Clean and reusable component structure for maintainability.",
+        "Optimized state management for seamless gameplay.",
+      ],
+      banner: "/assets/images/projects/say-simon.png",
+      logo: "/assets/images/projects/say-simon.png",
+      status: "Completed",
+      github: "https://github.com/thakurrahul99/Say-Simon-Game.git",
+      demo: "https://say-simon-game-plwf.vercel.app/",
+    },
+    {
       title: "Spotify Clone",
       stacks: ["HTML", "CSS", "Audio UI Layout"],
       shortDesc: "This is a clone of a music player app named Spotify.",
@@ -43,7 +88,7 @@ function Projects() {
       banner: "/assets/images/projects/spotify.png",
       logo: "/assets/images/projects/spotify.png",
       status: "In Progress",
-      github: "#",
+      github: "https://github.com/thakurrahul99/spotify.git",
       demo: "#",
     },
     {
@@ -62,7 +107,7 @@ function Projects() {
       banner: "/assets/images/projects/chatgpt.png",
       logo: "/assets/images/projects/chatgpt.png",
       status: "Completed",
-      github: "#",
+      github: "https://github.com/thakurrahul99/chatGPT.git",
       demo: "#",
     },
   ];
