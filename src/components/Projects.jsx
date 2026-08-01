@@ -21,7 +21,7 @@ function Projects() {
         "Quick contact options via WhatsApp, phone, and inquiry forms.",
         "SEO-friendly architecture for better search engine visibility.",
       ],
-      banner: "/assets/images/projects/banner-braj.png",
+      banner: "/assets/images/projects/banner-braj.webp",
       logo: "/assets/images/projects/logo.png",
       status: "Completed",
       privateRepo: true,
