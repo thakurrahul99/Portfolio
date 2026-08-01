@@ -61,15 +61,15 @@ function About() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Left: Glass Portrait */}
         <div className="lg:col-span-5 flex justify-center">
-          <div className="relative group max-w-sm rounded-3xl overflow-hidden p-[1.5px] bg-gradient-to-br from-violet-500 to-indigo-500 shadow-2xl">
+          <div className="relative group w-48 h-48 sm:w-56 sm:h-56 lg:w-full lg:h-auto lg:max-w-sm rounded-full lg:rounded-3xl overflow-hidden p-[1.5px] bg-gradient-to-br from-violet-500 to-indigo-500 shadow-2xl">
             {/* Soft Ambient Glow behind Portrait */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-violet-600 to-indigo-600 opacity-20 blur-2xl group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-violet-600 to-indigo-600 opacity-20 blur-2xl group-hover:opacity-30 transition-opacity rounded-full lg:rounded-3xl"></div>
 
-            <div className="rounded-[22px] overflow-hidden bg-slate-950">
+            <div className="w-full h-full lg:h-auto rounded-full lg:rounded-[22px] overflow-hidden bg-slate-950">
               <img
                 src="/assets/images/portrait-2.webp"
                 alt="About Rahul Singh"
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full lg:h-auto object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
