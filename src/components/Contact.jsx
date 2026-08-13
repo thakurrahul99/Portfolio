@@ -60,7 +60,7 @@ function Contact() {
     setSent(true)
 
     // FormSubmit AJAX request to deliver email directly
-    fetch('https://formsubmit.co/ajax/rahulsinghrajpoot9997@gmail.com', {
+    fetch('https://formsubmit.co/ajax/rahulsinghdevx@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
