@@ -7,6 +7,35 @@ function Projects() {
 
   const projects = [
     {
+      title: "AvsarDiary",
+      stacks: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+      ],
+      shortDesc:
+        "A full-stack job application tracker that helps job seekers organize and monitor their entire application pipeline in one place",
+      fullDesc:
+        "A secure, full-stack MERN application built to replace scattered spreadsheets with a single dashboard for tracking job applications. Features JWT-based authentication, real-time status updates, and a live analytics dashboard to visualize application progress across every stage of the job search.",
+      features: [
+        "Secure signup/login with JWT authentication and bcrypt password hashing.",
+        "Full CRUD functionality to add, update, and delete job applications.",
+        "User-scoped REST APIs ensuring each user can only access their own data.",
+        "Live analytics dashboard with Recharts showing status breakdown (Applied, Interview, Offer, Rejected).",
+        "Inline status updates and instant UI sync without page reloads.",
+        "Fully responsive design with a custom typography and color system.",
+      ],
+      banner: "/assets/images/projects/banner-avsardiary.png",
+      logo: "/assets/images/projects/logo-avsardiary.png",
+      status: "Completed",
+      privateRepo: false,
+      github: "https://github.com/thakurrahul99/Job-Tracker",
+      demo: "https://job-tracker-delta-ivory.vercel.app",
+    },
+    {
       title: "Braj Path Pradarshak",
       stacks: ["Next.js", "React", "Tailwind CSS", "Responsive Grid"],
       shortDesc:
@@ -24,8 +53,8 @@ function Projects() {
       banner: "/assets/images/projects/banner-braj.webp",
       logo: "/assets/images/projects/logo.png",
       status: "Completed",
-      privateRepo: true,
-      github: "#",
+      privateRepo: false,
+      github: "https://github.com/thakurrahul99/Braj-Path-Pradarshak.git",
       demo: "https://www.brajpathpradarshak.com/",
     },
     {
@@ -220,7 +249,7 @@ function Projects() {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 15 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
-                className="w-full max-w-2xl rounded-3xl border border-white/10 bg-slate-950/90 shadow-2xl overflow-hidden"
+                className="w-full max-w-2xl rounded-3xl border border-white/10 bg-slate-950/95 shadow-2xl overflow-hidden flex flex-col max-h-[85vh]"
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Header Banner */}
@@ -266,7 +295,7 @@ function Projects() {
                 </div>
 
                 {/* Modal Body */}
-                <div className="p-6 space-y-6">
+                <div className="p-6 space-y-6 overflow-y-auto flex-grow">
                   <div className="space-y-2">
                     <h4 className="text-sm font-extrabold uppercase tracking-wider text-violet-400">
                       Description

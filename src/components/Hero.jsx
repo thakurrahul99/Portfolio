@@ -50,7 +50,7 @@ function Hero() {
     },
     {
       icon: <Download size={18} />,
-      href: "/assets/resume/Rezume.pdf",
+      href: "/assets/resume/Resume.pdf",
       label: "Download Resume",
       download: "Rahul_Singh_Resume.pdf",
     },

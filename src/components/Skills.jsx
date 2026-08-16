@@ -45,8 +45,8 @@ function Skills() {
         "hover:border-purple-500/40 hover:shadow-[0_0_15px_rgba(121,44,237,0.2)]",
     },
     {
-      name: "Python",
-      image: "/assets/images/skills/Python.svg",
+      name: "NextJS",
+      image: "/assets/images/skills/nextjs.svg",
       glowClass:
         "hover:border-blue-400/40 hover:shadow-[0_0_15px_rgba(55,115,165,0.2)]",
     },

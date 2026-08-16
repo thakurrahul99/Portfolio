@@ -61,17 +61,21 @@ function About() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Left: Glass Portrait */}
         <div className="lg:col-span-5 flex justify-center">
-          <div className="relative group w-48 h-48 sm:w-56 sm:h-56 lg:w-full lg:h-auto lg:max-w-sm rounded-full lg:rounded-3xl overflow-hidden p-[1.5px] bg-gradient-to-br from-violet-500 to-indigo-500 shadow-2xl">
+          <div className="relative group w-48 h-48 sm:w-56 sm:h-56 lg:w-full lg:h-auto lg:max-w-sm rounded-3xl overflow-hidden bg-[#030712]">
             {/* Soft Ambient Glow behind Portrait */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-violet-600 to-indigo-600 opacity-20 blur-2xl group-hover:opacity-30 transition-opacity rounded-full lg:rounded-3xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-violet-600/10 via-indigo-600/10 to-transparent opacity-40 blur-3xl group-hover:opacity-60 transition-opacity"></div>
 
-            <div className="w-full h-full lg:h-auto rounded-full lg:rounded-[22px] overflow-hidden bg-slate-950">
-              <img
-                src="/assets/images/portrait-2.webp"
-                alt="About Rahul Singh"
-                className="w-full h-full lg:h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
+            <img
+              src="/assets/images/portrait-2.webp"
+              alt="About Rahul Singh"
+              className="w-full h-full lg:h-auto object-cover rounded-3xl filter grayscale contrast-[1.1] brightness-[0.8] group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-in-out"
+            />
+
+            {/* Dark vignette gradient overlay to blend bottom edges */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-80 pointer-events-none transition-opacity duration-700 group-hover:opacity-40"></div>
+            
+            {/* Subtle inner reflection edge (no thick border) */}
+            <div className="absolute inset-0 rounded-3xl ring-1 ring-inset ring-white/5 pointer-events-none"></div>
           </div>
         </div>
 
