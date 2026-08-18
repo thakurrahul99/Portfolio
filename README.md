@@ -4,7 +4,7 @@ A modern and responsive personal portfolio showcasing my skills, projects, and e
 
 ## 🚀 Live Demo
 
-🔗 [https://My Portfolio]([https://portfolio-vxax.vercel.app/])
+🔗https://portfolio-vxax.vercel.app/
 
 ---
 
