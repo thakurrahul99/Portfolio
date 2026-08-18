@@ -77,6 +77,8 @@ Portfolio: [https://your-portfolio-link.vercel.app](https://portfolio-vxax.verce
 
 LinkedIn:
 https://linkedin.com/in/rahulsinghdev
+
+Email:
 rahulsingh.devx@email.com
 
 ---
