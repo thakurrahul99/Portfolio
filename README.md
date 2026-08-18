@@ -76,10 +76,8 @@ I'm Rahul Singh, a MERN Stack Developer passionate about building responsive, sc
 Portfolio: https://your-portfolio-link.vercel.app
 
 LinkedIn:
-https://linkedin.com/in/your-profile
-
-Email:
-your@email.com
+https://linkedin.com/in/rahulsinghdev
+rahulsingh.devx@email.com
 
 ---
 
