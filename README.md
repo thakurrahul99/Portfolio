@@ -4,7 +4,7 @@ A modern and responsive personal portfolio showcasing my skills, projects, and e
 
 ## 🚀 Live Demo
 
-🔗 [https://your-portfolio-link.vercel.app](https://portfolio-vxax.vercel.app/)
+🔗 [https://My Portfolio]([https://portfolio-vxax.vercel.app/])
 
 ---
 
@@ -73,7 +73,7 @@ I'm Rahul Singh, a MERN Stack Developer passionate about building responsive, sc
 
 ## 📬 Contact
 
-Portfolio: https://your-portfolio-link.vercel.app
+Portfolio: [https://your-portfolio-link.vercel.app](https://portfolio-vxax.vercel.app/)
 
 LinkedIn:
 https://linkedin.com/in/rahulsinghdev
